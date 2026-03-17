@@ -96,13 +96,13 @@
 #include "lib/ergol-on-azerty/hold_taps_emul.dtsi" 
 
 
-
+/*
 / {
     chosen { 
         zmk,physical-layout = &five_col_layout; 
     };
 };
-
+*/
 / {
     keymap {
         compatible = "zmk,keymap";
