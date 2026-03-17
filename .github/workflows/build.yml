@@ -1,5 +1,7 @@
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
+uses: actions/checkout@v4
 
 on: [push, pull_request, workflow_dispatch]
 
