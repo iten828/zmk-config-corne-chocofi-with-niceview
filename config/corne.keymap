@@ -327,7 +327,7 @@
             bindings = <
   &trans &kp ESC  &kp LS(HOME) &kp LS(UP)   &kp LS(END)   &kp LS(PG_UP)                &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans 
   &trans X_ALL    &kp LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &kp LS(PG_DN)                &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans 
-  &trans X_UNDO   X_CUT        X_COPY       X_PASTE       X_REDO                       &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans   
+  &trans X_UNDO   X_CUT        X_COPY       X_PASTE       X_REDO                       &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans
                   &trans       &sc FUNCTION_LAYER DEL     &kp LS(TAB)                  &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
