@@ -166,10 +166,10 @@
     num_nav_layer {
       display-name = "NumNav";
       bindings = <
-   &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP    &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH &trans 
-   &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN    S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
-   &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO       S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
-    &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)       &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
+   &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP        &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH &trans 
+   &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
+   &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
+         &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)      &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
       >;
     };
 
@@ -227,7 +227,7 @@
   &trans &kp LS(FR_Q)  &kp LS(FR_C)  &kp LS(FR_O)  &kp LS(FR_P)  &kp LS(FR_W)      &kp LS(FR_J)    &kp LS(FR_M)  &kp LS(FR_D)   &kp FR_EXLM   &kp LS(FR_Y) &trans 
   &trans &kp LS(FR_A)  &kp LS(FR_S)  &kp LS(FR_E)  &kp LS(FR_N)  &kp LS(FR_F)      &kp LS(FR_L)    &kp LS(FR_R)  &kp LS(FR_T)   &kp LS(FR_I)  &kp LS(FR_U) &trans 
   &trans &kp LS(FR_Z)  &kp LS(FR_X)  &kp FR_QUES   &kp LS(FR_V)  &kp LS(FR_B)      &kp FR_COLN     &kp LS(FR_H)  &kp LS(FR_G)   &kp FR_SCLN   &kp LS(FR_K) &trans 
-                                                          &none  &none  &none      EL_SHIFTED_RTHUMB_REACH   EL_SHIFTED_RTHUMB_HOME       EL_SHIFED_RTHUMB_TUCK
+                                     &none         &none         &none             EL_SHIFTED_RTHUMB_REACH  EL_SHIFTED_RTHUMB_HOME  EL_SHIFED_RTHUMB_TUCK
            >;
         };
 
@@ -265,7 +265,7 @@
   &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP               &to EL_LAYER  &kp FR_7   &kp FR_8  &kp FR_9  &kp FR_SLSH &trans 
   &trans S_EQUAL  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN               &kp FR_MINS   &kp FR_4   &kp FR_5  &kp FR_6  &kp FR_0    &trans 
   &trans S_MONEY  S_COLON  S_STAR   S_PLUS    S_PRCNT                 &kp FR_COMM   &kp FR_1   &kp FR_2  &kp FR_3  &kp FR_DOT  &trans 
-  &sl EL_SNUM_NAV_LAYER  &sc EL_NUM_NAV_LAYER BACKSPACE  &kp (TAB)    &trans  &lt EL_NUM_NAV_LAYER LS(SPACE)  &EZ_SL(EL_SYMBOLS_LAYER)
+  &sl EL_SNUM_NAV_LAYER  &sc EL_NUM_NAV_LAYER BACKSPACE  &kp (TAB)    &trans        &lt EL_NUM_NAV_LAYER LS(SPACE) &EZ_SL(EL_SYMBOLS_LAYER)
             >;
         };
 
@@ -303,7 +303,7 @@
  &trans  &kp CAPS X_CLOSE  X_PREV   X_NEXT    &none            &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL &trans 
  &trans  X_ALL    X_SAVE   X_SHTAB  &kp TAB   &none            &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none   &trans 
  &trans  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           &none    &none     &none     &none     &none   &trans 
- &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo EL_NUM_ROW_LAYER    &trans   &mo FUNCTION_LAYER &EZ_LSK(RALT)
+ &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo EL_NUM_ROW_LAYER    &trans   &mo FUNCTION_LAYER  &EZ_LSK(RALT)
       >;
     };
 
@@ -329,7 +329,7 @@
   &trans &kp ESC  &kp LS(HOME) &kp LS(UP)   &kp LS(END)   &kp LS(PG_UP)                &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans 
   &trans X_ALL    &kp LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &kp LS(PG_DN)                &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans 
   &trans X_UNDO   X_CUT        X_COPY       X_PASTE       X_REDO                       &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans   
-                  &trans       &sc FUNCTION_LAYER DEL     &kp LS(TAB)                  &kp ESCAPE  &trans   &EZ_LSK(RALT)                                          
+                  &trans       &sc FUNCTION_LAYER DEL     &kp LS(TAB)                  &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
 
@@ -338,9 +338,9 @@
     ergol_num_row_layer {
       display-name = "NumRow";
       bindings = <
- &trans  &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR  &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN &trans 
- &trans  &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7     &kp FR_8    &kp FR_9     &kp FR_0     &trans 
- &trans  &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM  &kp FR_DOT  &kp FR_COLN  &kp FR_SLSH  &trans 
+ &trans  &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN  &trans 
+ &trans  &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0     &trans 
+ &trans  &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH  &trans 
                                  &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
