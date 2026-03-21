@@ -135,8 +135,8 @@
             >;
         };
 
-        // 2. Symbols layer -- with Ergol, basically just an AltGr layer with custom thumb keys
-        //                  -- can be redefined for non-AltGr layouts such as QWERTY-ANSI
+    // 2. Symbols layer -- with Ergol, basically just an AltGr layer with custom thumb keys
+    //                  -- can be redefined for non-AltGr layouts such as QWERTY-ANSI
     symbols_layer {
           display-name = "Symbols";
           bindings = <
@@ -186,7 +186,6 @@
       >;
     };
 
-        // Gaming layer------------------------------------------------------------------------------------------------
     // 6.Gaming layer -- TODO
     //                -- 
     //                -- 
