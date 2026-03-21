@@ -99,10 +99,11 @@
 /*
 / {
     chosen { 
-        zmk,physical-layout = &five_col_layout; 
+        zmk,physical-layout = &five_col_layout;
     };
 };
 */
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -110,7 +111,7 @@
     // 0. Base layer -- keep the QWERTY key codes to use your OS keyboard layout
     //               -- the Space Cadet layer-tap on the right can be replaced by an AltGr/Enter mod-tap
     //               -- adjust the homerow mods with the #define statements above
- 
+
     default_layer {
             display-name = "Qwerty";
             bindings = <
@@ -122,8 +123,8 @@
         };
 
     // 1. NumLock layer -- NavNum layer that stays on until deactivated without holding key
-    //                  -- 
-    //                  -- 
+    //                  --
+    //                  --
     num_lock_layer {
             display-name = "NumLock";
             bindings = <
@@ -133,18 +134,18 @@
                  &sc NUM_NAV_LAYER BACKSPACE  &kp (TAB)    &trans  &lt NUM_NAV_LAYER LS(SPACE)  &EZ_SL(SYMBOLS_LAYER)
             >;
         };
-      
-    // 2. Symbols layer -- with Ergol, basically just an AltGr layer with custom thumb keys
-    //                  -- can be redefined for non-AltGr layouts such as QWERTY-ANSI
-    symbols_layer {
-      display-name = "Symbols";
-      bindings = <
-  &trans S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE &trans
-  &trans S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   &trans
-  &trans S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK &trans
-               SYM_NUM_LAYER  &kp SPACE  &kp ENTER    &trans  &trans  &trans
-      >;
-    };
+
+        // 2. Symbols layer -- with Ergol, basically just an AltGr layer with custom thumb keys
+        //                  -- can be redefined for non-AltGr layouts such as QWERTY-ANSI
+        symbols_layer {
+          display-name = "Symbols";
+          bindings = <
+      &trans S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE &trans
+      &trans S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   &trans
+      &trans S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK &trans
+                   SYM_NUM_LAYER  &kp SPACE  &kp ENTER    &trans  &trans  &trans
+          >;
+        };
 
     // 3. VimNav layer -- HJKL arrow cluster on the right hand
     //                 -- best used along with the NumRow layer
@@ -184,7 +185,8 @@
                                 &trans  &kp RS(SPACE) &trans          &trans     &kp LS(SPACE)   &kp RALT
       >;
     };
-    // Gaming layer------------------------------------------------------------------------------------------------
+
+        // Gaming layer------------------------------------------------------------------------------------------------
     // 6.Gaming layer -- TODO
     //                -- 
     //                -- 
@@ -199,7 +201,7 @@
         };
     // Ergo-l over Windows Azerty ----------------------------------------------------------------------------------
     // 7. Ergol over Windows azerty layer --
-    //                                    -- 
+    //                                    --
         ergol-layer {
             label = "Ergo-l";
             display-name = "Ergo-l";
@@ -228,7 +230,7 @@
                                                           &none  &none  &none      EL_SHIFTED_RTHUMB_REACH   EL_SHIFTED_RTHUMB_HOME       EL_SHIFED_RTHUMB_TUCK
            >;
         };
- 
+
     // 9. Ergol 1DK layer --
     //                    --
         ergol_1dk_layer {
@@ -243,7 +245,7 @@
         };
 
     // 10. Ergol Shift 1DK --
-    //                 -- 
+    //                 --
         sergol_1dk_layer {
             label = "s1dk";
             display-name = "s1dk";
@@ -256,7 +258,7 @@
         };
 
     // 11. Ergol NumLock --
-    //                   -- 
+    //                   --
         ergol_num_lock_layer {
             display-name = "NumLock";
             bindings = <
@@ -267,8 +269,8 @@
             >;
         };
 
-    // 12. Ergol SYM   --
-    //                 -- 
+                                // 12. Ergol SYM   --
+    //                 --
         ergol_sym_layer {
             label = "sym";
             display-name = "Sym";
@@ -280,8 +282,8 @@
             >;
         };
 
-    // 13. Ergol SSYM  -- 
-    //                 -- 
+    // 13. Ergol SSYM  --
+    //                 --
         sergol_sym_layer {
             label = "ssym";
             display-name = "ShfSym";
@@ -306,7 +308,7 @@
     };
 
     // 15. Ergol NumNav --
-    //                  -- 
+    //                  --
         ergol_numnav_layer {
             label = "ergol-NumNav";
             display-name = "NumNav";
@@ -318,7 +320,7 @@
             >;
         };
 
-    // 16. Ergol Shift NumNav -- 
+    // 16. Ergol Shift NumNav --
     //                        --
         sergol_numnav_layer {
             label = "snumnav";
@@ -331,8 +333,8 @@
             >;
         };
 
-    // 17. NumRow layer -- 
-    //                  --  
+    // 17. NumRow layer --
+    //                  --
     ergol_num_row_layer {
       display-name = "NumRow";
       bindings = <
@@ -342,9 +344,10 @@
                                  &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
+
 // Common layers -----------------------------------------------------------------------------------------------
     // 18. Functions layer --
-    //                    -- 
+    //                    --
         Functions {
             label = "Functions";
             display-name = "Functions";
@@ -355,8 +358,9 @@
                           &mo BT   &trans   &trans                   &trans          &trans          &trans
             >;
         };
-    // 19. BlueTooth layer -- 
-    //                    -- 
+
+        // 19. BlueTooth layer --
+    //                    --
         BT {
             display-name = "BT";
             bindings = <
@@ -377,5 +381,5 @@
 #ifdef KB_LAYOUT_AZERTY
   #include "extra_layers/azerty.dtsi"
 #elif defined KB_LAYOUT_ERGOL && defined HUMMINGBIRD
-  #include "extra_layers/ergol_hummingbird.dtsi"
+    #include "extra_layers/ergol_hummingbird.dtsi"
 #endif
