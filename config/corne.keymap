@@ -381,5 +381,5 @@
 #ifdef KB_LAYOUT_AZERTY
   #include "extra_layers/azerty.dtsi"
 #elif defined KB_LAYOUT_ERGOL && defined HUMMINGBIRD
-    #include "extra_layers/ergol_hummingbird.dtsi"
+  #include "extra_layers/ergol_hummingbird.dtsi"
 #endif
