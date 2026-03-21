@@ -137,13 +137,13 @@
 
         // 2. Symbols layer -- with Ergol, basically just an AltGr layer with custom thumb keys
         //                  -- can be redefined for non-AltGr layouts such as QWERTY-ANSI
-        symbols_layer {
+    symbols_layer {
           display-name = "Symbols";
           bindings = <
-      &trans S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE &trans
-      &trans S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   &trans
-      &trans S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK &trans
-                   SYM_NUM_LAYER  &kp SPACE  &kp ENTER    &trans  &trans  &trans
+  &trans S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE &trans
+  &trans S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   &trans
+  &trans S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK &trans
+               SYM_NUM_LAYER  &kp SPACE  &kp ENTER    &trans  &trans  &trans
           >;
         };
 
@@ -166,10 +166,10 @@
     num_nav_layer {
       display-name = "NumNav";
       bindings = <
-   &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP        &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH &trans 
-   &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
-   &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
-         &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)      &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
+  &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP        &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH &trans 
+  &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
+  &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
+        &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)      &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
       >;
     };
 
@@ -193,16 +193,16 @@
     gaming_layer {
             display-name = "Gaming";
             bindings = <
-   &trans &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P    &trans 
-   &trans HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI &trans 
-   &trans HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &trans 
+  &trans &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P    &trans 
+  &trans HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI &trans 
+  &trans HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &trans 
              &kp LALT  &kp SPACE RTHUMB_REACH     RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
     // Ergo-l over Windows Azerty ----------------------------------------------------------------------------------
     // 7. Ergol over Windows azerty layer --
     //                                    --
-        ergol-layer {
+    ergol-layer {
             label = "Ergo-l";
             display-name = "Ergo-l";
             bindings = <
@@ -220,7 +220,7 @@
     //                -- Note: attention, est-ce que le fait de ne plus avoir accès au modifieur shift global
     //                -- ne risque pas de poser des problèmes en cas d’utilisation de shift dans un raccourci clavier ?
     //                -- (le shift-enter est géré). Dans ce cas, ajouter shift en HRM serait une solution.
-        sergol-layer {
+    sergol-layer {
             label = "Shift";
             display-name = "Shift";
             bindings = <
@@ -233,7 +233,7 @@
 
     // 9. Ergol 1DK layer --
     //                    --
-        ergol_1dk_layer {
+    ergol_1dk_layer {
             label = "1dk";
             display-name = "1dk";
             bindings = <
@@ -246,7 +246,7 @@
 
     // 10. Ergol Shift 1DK --
     //                 --
-        sergol_1dk_layer {
+    sergol_1dk_layer {
             label = "s1dk";
             display-name = "s1dk";
             bindings = <
@@ -259,7 +259,7 @@
 
     // 11. Ergol NumLock --
     //                   --
-        ergol_num_lock_layer {
+     ergol_num_lock_layer {
             display-name = "NumLock";
             bindings = <
   &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP               &to EL_LAYER  &kp FR_7   &kp FR_8  &kp FR_9  &kp FR_SLSH &trans 
@@ -269,9 +269,9 @@
             >;
         };
 
-                                // 12. Ergol SYM   --
+    // 12. Ergol SYM   --
     //                 --
-        ergol_sym_layer {
+     ergol_sym_layer {
             label = "sym";
             display-name = "Sym";
             bindings = <
@@ -284,7 +284,7 @@
 
     // 13. Ergol SSYM  --
     //                 --
-        sergol_sym_layer {
+    sergol_sym_layer {
             label = "ssym";
             display-name = "ShfSym";
             bindings = <
@@ -297,7 +297,7 @@
 
     // 14. Ergol VimNav layer --
     //                        --
-        ergol_vim_nav_layer {
+    ergol_vim_nav_layer {
              display-name = "VimNav";
              bindings = <
  &trans  &kp CAPS X_CLOSE  X_PREV   X_NEXT    &none            &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL &trans 
@@ -309,7 +309,7 @@
 
     // 15. Ergol NumNav --
     //                  --
-        ergol_numnav_layer {
+    ergol_numnav_layer {
             label = "ergol-NumNav";
             display-name = "NumNav";
             bindings = <
@@ -322,7 +322,7 @@
 
     // 16. Ergol Shift NumNav --
     //                        --
-        sergol_numnav_layer {
+    sergol_numnav_layer {
             label = "snumnav";
             display-name = "sNumNav";
             bindings = <
@@ -348,7 +348,7 @@
 // Common layers -----------------------------------------------------------------------------------------------
     // 18. Functions layer --
     //                    --
-        Functions {
+    Functions {
             label = "Functions";
             display-name = "Functions";
             bindings = <
@@ -359,9 +359,9 @@
             >;
         };
 
-        // 19. BlueTooth layer --
+    // 19. BlueTooth layer --
     //                    --
-        BT {
+    BT {
             display-name = "BT";
             bindings = <
  &trans  &kp N1        &kp N2           &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8     &kp N9     &kp N0 &trans 
