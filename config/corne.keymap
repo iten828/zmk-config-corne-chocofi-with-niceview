@@ -115,10 +115,10 @@
     default_layer {
             display-name = "Qwerty";
             bindings = <
-  &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I       &kp O    &kp P &kp BSPC
-  &kp LCTRL HRM_A  HRM_S  HRM_D  HRM_F  &kp G    &kp H  HRM_J  HRM_K       HRM_L    &kp SEMI &kp SQT
-  &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &kp ESC
-       LTHUMB_TUCK  LTHUMB_HOME  LTHUMB_REACH    RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
+  &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I       &kp O    &kp P &kp BSPC
+  &kp LCTRL HRM_A  HRM_S  HRM_D  HRM_F  &kp G     &kp H  HRM_J  HRM_K       HRM_L    &kp SEMI &kp SQT
+  &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &kp ESC
+       LTHUMB_TUCK  LTHUMB_HOME  LTHUMB_REACH     RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
 
@@ -170,8 +170,8 @@
   &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
   &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
         &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)      &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
-      >;
-    };
+            >;
+        };
 
     // 5. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
     //                 -- space becomes shift+space, which is a no-break space with some OS layouts (e.g. Ergol)
@@ -192,10 +192,10 @@
     gaming_layer {
             display-name = "Gaming";
             bindings = <
-  &trans &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P    &trans 
-  &trans HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI &trans 
-  &trans HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &trans 
-             &kp LALT  &kp SPACE RTHUMB_REACH     RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
+  &trans &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P     &trans 
+  &trans HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI  &trans 
+  &trans HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH  &trans 
+           &kp LALT  &kp SPACE RTHUMB_REACH      RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
     // Ergo-l over Windows Azerty ----------------------------------------------------------------------------------
@@ -205,9 +205,9 @@
             label = "Ergo-l";
             display-name = "Ergo-l";
             bindings = <
-  &trans &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M   &kp FR_D  &sl EL_1DK_LAYER  &kp FR_Y &trans 
-  &trans HRM_FR_A  HRM_S     HRM_E        HRM_N     &kp FR_F        &kp FR_L    HRM_R      HRM_T     HRM_I             &kp FR_U &trans 
-  &trans &kp FR_Z  &kp FR_X  &kp FR_MINS  &kp FR_V  &kp FR_B        &kp FR_DOT  &kp FR_H   &kp FR_G  &kp FR_COMM       &kp FR_K &trans 
+  &trans &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl EL_1DK_LAYER  &kp FR_Y &trans 
+  &trans HRM_FR_A  HRM_S     HRM_E        HRM_N     &kp FR_F        &kp FR_L    HRM_R     HRM_T     HRM_I             &kp FR_U &trans 
+  &trans &kp FR_Z  &kp FR_X  &kp FR_MINS  &kp FR_V  &kp FR_B        &kp FR_DOT  &kp FR_H  &kp FR_G  &kp FR_COMM       &kp FR_K &trans 
              EL_LTHUMB_TUCK  EL_LTHUMB_HOME  EL_LTHUMB_REACH        EL_RTHUMB_REACH  EL_RTHUMB_HOME EL_RTHUMB_TUCK
             >;
         };
@@ -223,9 +223,9 @@
             label = "Shift";
             display-name = "Shift";
             bindings = <
-  &trans &kp LS(FR_Q)  &kp LS(FR_C)  &kp LS(FR_O)  &kp LS(FR_P)  &kp LS(FR_W)      &kp LS(FR_J)    &kp LS(FR_M)  &kp LS(FR_D)   &kp FR_EXLM   &kp LS(FR_Y) &trans 
-  &trans &kp LS(FR_A)  &kp LS(FR_S)  &kp LS(FR_E)  &kp LS(FR_N)  &kp LS(FR_F)      &kp LS(FR_L)    &kp LS(FR_R)  &kp LS(FR_T)   &kp LS(FR_I)  &kp LS(FR_U) &trans 
-  &trans &kp LS(FR_Z)  &kp LS(FR_X)  &kp FR_QUES   &kp LS(FR_V)  &kp LS(FR_B)      &kp FR_COLN     &kp LS(FR_H)  &kp LS(FR_G)   &kp FR_SCLN   &kp LS(FR_K) &trans 
+  &trans &kp LS(FR_Q)  &kp LS(FR_C)  &kp LS(FR_O)  &kp LS(FR_P)  &kp LS(FR_W)      &kp LS(FR_J)  &kp LS(FR_M)  &kp LS(FR_D)  &kp FR_EXLM   &kp LS(FR_Y) &trans 
+  &trans &kp LS(FR_A)  &kp LS(FR_S)  &kp LS(FR_E)  &kp LS(FR_N)  &kp LS(FR_F)      &kp LS(FR_L)  &kp LS(FR_R)  &kp LS(FR_T)  &kp LS(FR_I)  &kp LS(FR_U) &trans 
+  &trans &kp LS(FR_Z)  &kp LS(FR_X)  &kp FR_QUES   &kp LS(FR_V)  &kp LS(FR_B)      &kp FR_COLN   &kp LS(FR_H)  &kp LS(FR_G)  &kp FR_SCLN   &kp LS(FR_K) &trans 
                                      &none         &none         &none             EL_SHIFTED_RTHUMB_REACH  EL_SHIFTED_RTHUMB_HOME  EL_SHIFED_RTHUMB_TUCK
            >;
         };
@@ -249,9 +249,9 @@
             label = "s1dk";
             display-name = "s1dk";
             bindings = <
-  &trans &circ LS(FR_A)  &a01xx K9 K9  &a01xx K4 K0    &circ LS(FR_O)  &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &circ LS(FR_U)   &to EL_LAYER   &trans 
-  &trans &agrv LS(FR_A)  &a1xx K4 K4   &agrv LS(FR_E)  &circ LS(FR_E)  &tild LS(FR_N)       &to EL_LAYER  &to EL_LAYER  &circ LS(FR_I)  &diae LS(FR_I)   &agrv LS(FR_U) &trans 
-  &trans &a01xx K9 K8    &to EL_LAYER  &to EL_LAYER    &to EL_LAYER    &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &ax K7           &a01xx K7 K4   &trans 
+  &trans &circ LS(FR_A)  &a01xx K9 K9  &a01xx K4 K0    &circ LS(FR_O)  &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &circ LS(FR_U)  &to EL_LAYER   &trans 
+  &trans &agrv LS(FR_A)  &a1xx K4 K4   &agrv LS(FR_E)  &circ LS(FR_E)  &tild LS(FR_N)       &to EL_LAYER  &to EL_LAYER  &circ LS(FR_I)  &diae LS(FR_I)  &agrv LS(FR_U) &trans 
+  &trans &a01xx K9 K8    &to EL_LAYER  &to EL_LAYER    &to EL_LAYER    &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &ax K7          &a01xx K7 K4   &trans 
                                        &trans          &trans          &trans               &trans        &trans        &trans
             >;
         };
@@ -325,10 +325,10 @@
             label = "snumnav";
             display-name = "sNumNav";
             bindings = <
-  &trans &kp ESC  &kp LS(HOME) &kp LS(UP)   &kp LS(END)   &kp LS(PG_UP)                &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans 
-  &trans X_ALL    &kp LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &kp LS(PG_DN)                &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans 
-  &trans X_UNDO   X_CUT        X_COPY       X_PASTE       X_REDO                       &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans
-                  &trans       &sc FUNCTION_LAYER DEL     &kp LS(TAB)                  &kp ESCAPE             &trans       &EZ_LSK(RALT)
+  &trans &kp ESC  &kp LS(HOME) &kp LS(UP)   &kp LS(END)   &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans 
+  &trans X_ALL    &kp LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans 
+  &trans X_UNDO   X_CUT        X_COPY       X_PASTE       X_REDO              &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans
+                  &trans       &sc FUNCTION_LAYER DEL     &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
 
