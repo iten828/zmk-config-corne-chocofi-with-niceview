@@ -115,9 +115,9 @@
     default_layer {
             display-name = "Qwerty";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I       &kp O    &kp P 
-  HRM_A  HRM_S  HRM_D  HRM_F  &kp G     &kp H  HRM_J  HRM_K       HRM_L    &kp SEMI 
-  &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH 
+  &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I       &kp O    &kp P &kp BSPC
+  &kp LCTRL HRM_A  HRM_S  HRM_D  HRM_F  &kp G     &kp H  HRM_J  HRM_K       HRM_L    &kp SEMI &kp SQT
+  &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH &kp ESC
        LTHUMB_TUCK  LTHUMB_HOME  LTHUMB_REACH     RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
@@ -128,9 +128,9 @@
     num_lock_layer {
             display-name = "NumLock";
             bindings = <
-  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP    &to BASE_LAYER S_N7  S_N8  S_N9  S_FSLH 
-  S_EQUAL  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN    S_MINUS        S_N4  S_N5  S_N6  S_N0   
-  S_MONEY  S_COLON  S_STAR   S_PLUS    S_PRCNT      S_COMMA        S_N1  S_N2  S_N3  S_DOT  
+  &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP    &to BASE_LAYER S_N7  S_N8  S_N9  S_FSLH &trans
+  &trans S_EQUAL  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN    S_MINUS        S_N4  S_N5  S_N6  S_N0   &trans
+  &trans S_MONEY  S_COLON  S_STAR   S_PLUS    S_PRCNT      S_COMMA        S_N1  S_N2  S_N3  S_DOT  &trans
                  &sc NUM_NAV_LAYER BACKSPACE  &kp (TAB)    &trans  &lt NUM_NAV_LAYER LS(SPACE)  &EZ_SL(SYMBOLS_LAYER)
             >;
         };
@@ -140,9 +140,9 @@
     symbols_layer {
           display-name = "Symbols";
           bindings = <
-  S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE 
-  S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   
-  S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK
+  &trans S_CARET S_LT    S_GT    S_DLLR  S_PRCNT      S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE &trans
+  &trans S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL      S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT   &trans
+  &trans S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH       S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK &trans
                SYM_NUM_LAYER  &kp SPACE  &kp ENTER    &trans  &trans  &trans
           >;
         };
@@ -153,9 +153,9 @@
     vim_nav_layer {
       display-name = "VimNav";
       bindings = <
-  &kp CAPS X_CLOSE  X_PREV   X_NEXT    &none         &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL 
-  X_ALL    X_SAVE   X_SHTAB  &kp TAB   &none         &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  
-  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO        &none    &none     &none     &none     &none 
+  &trans &kp CAPS X_CLOSE  X_PREV   X_NEXT    &none         &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL &trans 
+  &trans X_ALL    X_SAVE   X_SHTAB  &kp TAB   &none         &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none   &trans 
+  &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO        &none    &none     &none     &none     &none   &trans 
   &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo NUM_ROW_LAYER   &trans   &mo FUNCTION_LAYER  &EZ_LSK(RALT)
       >;
     };
@@ -166,9 +166,9 @@
     num_nav_layer {
       display-name = "NumNav";
       bindings = <
-  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP        &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH 
-  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0  
-  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT
+  &trans &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP        &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH &trans 
+  &trans X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN        S_MINUS            S_N4  S_N5  S_N6  S_N0   &trans 
+  &trans X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO           S_COMMA            S_N1  S_N2  S_N3  S_DOT  &trans 
         &kp CAPSLOCK  &sc FUNCTION_LAYER DEL  &kp LS(TAB)      &kp ESCAPE  &lt FUNCTION_LAYER LS(SPACE)  &EZ_LSK(RALT)
             >;
         };
@@ -179,9 +179,9 @@
     num_row_layer {
       display-name = "NumRow";
       bindings = <
-  &kp RS(N1) &kp RS(N2) &kp RS(N3) &kp RS(N4) &kp RS(N5)      &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
-  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9     &kp N0   
-  &none      &none      &none      &none      &none           S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH  
+  &trans  &kp RS(N1) &kp RS(N2) &kp RS(N3) &kp RS(N4) &kp RS(N5)      &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &trans 
+  &trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans 
+  &trans  &none      &none      &none      &none      &none           S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH     &trans 
                                 &trans  &kp RS(SPACE) &trans          &trans     &kp LS(SPACE)   &kp RALT
       >;
     };
@@ -192,9 +192,9 @@
     gaming_layer {
             display-name = "Gaming";
             bindings = <
-  &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P    
-  HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI  
-  HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH 
+  &trans &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P     &trans 
+  &trans HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI  &trans 
+  &trans HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH  &trans 
            &kp LALT  &kp SPACE RTHUMB_REACH      RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
